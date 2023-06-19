@@ -33,7 +33,8 @@ void img_dir (char *img_name){
 
     // first entry is volume name, we start from second entry 
     dir_entry++;
-    while (dir_entry->attr & 0x30){  // while not archive entry 
+    //while (dir_entry->attr & 0x30){  // while not archive entry 
+    while (dir_entry->name[0] !=0xe5 ){  // E5 indicates directory dir is free
 
         short unsigned int  year = (dir_entry->cdate >> 9);
         short unsigned int  month = (dir_entry->cdate << 7);
@@ -72,6 +73,7 @@ void img_dir (char *img_name){
         printf("\n");
     }
 
+    printf("\n\n");
 
 /*
 
