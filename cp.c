@@ -15,7 +15,7 @@ void extract_file (char* src_name, char* dst_name){
 
     printf("File %s does not exist in the root directory\n",src_name);
 
-
+/*
     floppy = fopen(img_name, "r");
     fseek(floppy,19*512, SEEK_SET );
     fread(sector, sizeof(sector),1,floppy);
@@ -30,7 +30,7 @@ void extract_file (char* src_name, char* dst_name){
     while (dir_entry->attr & 0x30){  // while not archive entry 
 
 
-
+*/
 
 }
 

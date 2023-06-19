@@ -7,8 +7,8 @@
             "request": "launch",
             //"program": "${workspaceFolder}/main",  // 
             "program": "${workspaceFolder}/hw5",  
-            //"args": ["floppy_image/floppy.img", "dir"],
-            "args": ["floppy_image/floppy.img", "cp" ,"FS.H", "fs.h"],
+            "args": ["floppy_image/floppy.img", "dir"],
+            //"args": ["floppy_image/floppy.img", "cp" ,"FS.H", "fs.h"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "miDebuggerPath": "/usr/bin/gdb",
