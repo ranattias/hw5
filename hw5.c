@@ -18,7 +18,7 @@ int main (int argc, char *argv[]){
         img_dir(img_file_name);
     
     if (strcmp(argv[2],"cp") == 0)
-        extract_file(argv[3], argv[4]);
+        extract_file(img_file_name, argv[3], argv[4]);
     
     
     return 0;
